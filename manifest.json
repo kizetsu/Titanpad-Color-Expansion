@@ -4,15 +4,15 @@
   "author": "kizetsu",
   "name": "Titanpad Color Expansion",
   "description": "Group related expansion to add four text colors to Titanpad: red, magenta, blue and green",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "permissions": [
-    "http://niveau-singles.titanpad.com/*"
+    "https://niveau-singles.titanpad.com/*"
   ],
 
   "content_scripts": [
     {
-      "matches": ["http://niveau-singles.titanpad.com/*"],
+      "matches": ["https://niveau-singles.titanpad.com/*"],
       "js": ["js/content.js"],
       "run_at": "document_idle"
     }
