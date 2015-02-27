@@ -10,13 +10,12 @@ function setButtons() {
 	var tSaveButton = document.getElementById("syncstatusdone");
 
 	/* Define Buttons */
-	var tHelpButton = document.createElement('a');
-	tHelpButton.href = 'javascript:void(tHelpButtonTrigger())';
-	tHelpButton.className = 'editbarbutton tHelp';
+	var tHelpButton = document.createElement('input');
+	tHelpButton.type = 'button';
+	tHelpButton.className = 'tHelp';
 	tHelpButton.title = 'Titanpad Color Expansion Help';
 	tHelpButton.unselectable = 'on';
-	tHelpButton.style.left = '280px';
-	tHelpButton.style.backgroundImage = 'https://raw.githubusercontent.com/kizetsu/Titanpad-Color-Expansion/beta/img/question-icon.png';
+	tHelpButton.onclick = function() {document.getElementById('tHelpModal').style.display = 'block';};
 
 	/* Insert Buttons */
 	insertAfter(tHelpButton,tSaveButton);
@@ -28,17 +27,9 @@ function tHelpButtonModal() {
 
 	var tHelpModal = document.createElement('div');
 	tHelpModal.id = 'tHelpModal';
-	tHelpModal.style.display = 'none';
-	tHelpModal.style.position = 'absolute';
-	tHelpModal.style.width = '100%';
-	tHelpModal.style.height = '100%';
-	tHelpModal.style.zIndex = '800';
-	tHelpModal.style.top = '0';
-	tHelpModal.style.left = '0';
-	tHelpModal.style.padding = '30% 10%';
 
-	tHelpModal.innerHTML = '<div id="tHelpModalInner" style="background-color:grey;">'+
-			'<a type="button" href="javascript:void(tHelpButtonTrigger());">Close</a>'+
+	tHelpModal.innerHTML = '<div id="tHelpModalInner">'+
+			'<div style="position:relative;display:block;top:0;right:0;"><input class="tClose" type="button" onclick="document.getElementById(\'tHelpModal\').style.display = \'none\';"></div>'+
 			'<p><h1>Hilfe zu Titanpad Color Expansion Plugin</h1></p>'+
 			'<p>'+
 				'Aktuell gibt es <span style="color:red">4</span> Farbcodes<br/>'+
@@ -52,22 +43,11 @@ function tHelpButtonModal() {
 				'</ul>'+
 			'</p>'+
 			'<p>'+
-				'Aktuelle Verion: 1.0.4<br/>Author: Ralph Dittrich <a href="mailto:kizetu.rd@googlemail.com">kizetu.rd@googlemail.com</a><br/>Lizenz: GNU GPL 02/2015'+
+				'Aktuelle Verion: 1.0.1.25<br/>Author: Ralph Dittrich <a href="mailto:kizetu.rd@googlemail.com">kizetu.rd@googlemail.com</a><br/>Lizenz: GNU GPL 02/2015'+
 			'</p>'+
 		'</div>';
 
 	insertAfter(tHelpModal,tMainmodals);
-}
-
-function tHelpButtonTrigger() {
-	var tHelpModal = document.getElementById("tHelpModal");
-	if(tHelpModal.className === 'tHiddenModal') {
-		tHelpModal.className = 'tShownModal';
-		tHelpModal.style.display = 'block';
-	} else if (tHelpModal.className === 'tShownModal') {
-		tHelpModal.className = 'tHiddenModal';
-		tHelpModal.style.display = 'none';
-	}
 }
 
 function colors() {
