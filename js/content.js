@@ -32,18 +32,18 @@ function tHelpButtonModal() {
 			'<div style="position:relative;display:block;top:0;right:0;"><input class="tClose" type="button" onclick="document.getElementById(\'tHelpModal\').style.display = \'none\';"></div>'+
 			'<p><h1>Hilfe zu Titanpad Color Expansion Plugin</h1></p>'+
 			'<p>'+
-				'Aktuell gibt es <span style="color:red">4</span> Farbcodes<br/>'+
+				'Aktuell gibt es <span style="color:red"><b>4</b></span> Farbcodes<br/>'+
 				'<br/>'+
 				'Die aktuellen Farben lassen sich durch eine Anfangs- und Endmarkierung an ein Textstück setzen. Die Marker hierfür sind:<br/>'+
 				'<ul>'+
-					'<li>Einfache eckige Klammern für<span style="color:red">[roten Text]</span></li>'+
+					'<li>Einfache eckige Klammern für <span style="color:red">[roten Text]</span></li>'+
 					'<li>Einfache Rauten für <span style="color:magenta">#magenta Text#</span></li>'+
 					'<li>Doppelte Sterne für <span style="color:blue">**blauen Text**</span></li>'+
 					'<li>Doppelte "einfache" Apostrophe (Shift + #) für <span style="color:green">\'\'grünen Text\'\'</span></li>'+
 				'</ul>'+
 			'</p>'+
-			'<p>'+
-				'Aktuelle Verion: 1.0.1.25<br/>Author: Ralph Dittrich <a href="mailto:kizetu.rd@googlemail.com">kizetu.rd@googlemail.com</a><br/>Lizenz: GNU GPL 02/2015'+
+			'<p style="font-size:10px;">'+
+				'Aktuelle Verion: 1.0.1.26<br/>Author: Ralph Dittrich <a href="mailto:kizetu.rd@googlemail.com">kizetu.rd@googlemail.com</a><br/>Lizenz: GNU GPL 02/2015'+
 			'</p>'+
 		'</div>';
 
