@@ -8,3 +8,7 @@ Group related expansion to add four text colors to Titanpad: red, magenta, blue 
 ''Text'' for green text
 ```
 ![](http://i.imgur.com/8kTNqed.png)
+
+"Hilfe"-Modal hinzugefügt:
+
+![](http://i.imgur.com/MCUoPYI.png)
