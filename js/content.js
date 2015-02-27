@@ -15,10 +15,8 @@ function setButtons() {
 	tHelpButton.className = 'editbarbutton tHelp';
 	tHelpButton.title = 'Titanpad Color Expansion Help';
 	tHelpButton.unselectable = 'on';
-	tHelpButton.style.display = 'block';
-	tHelpButton.style.position = 'absolute';
-	tHelpButton.style.height = '26px';
-	tHelpButton.style.width
+	tHelpButton.style.left = '280px';
+	tHelpButton.style.backgroundImage = 'https://raw.githubusercontent.com/kizetsu/Titanpad-Color-Expansion/beta/img/question-icon.png';
 
 	/* Insert Buttons */
 	insertAfter(tHelpButton,tSaveButton);
